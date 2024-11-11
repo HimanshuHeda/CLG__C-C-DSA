@@ -1,0 +1,78 @@
+																						/*
+ Program for Hierachical Inheritance.
+																												*/
+ #include<iostream.h>
+ #include<conio.h>
+ class ANIMAL
+ {
+	public:
+		void info();
+ };
+ class DOG : public ANIMAL
+ {
+	public:
+		void get_dog();
+ };
+ class CAT : public ANIMAL
+ {
+	public:
+		void get_cat();
+ };
+ class RESULT : public TEST, public SPORTS
+ {
+		float total;
+	public:
+		void display();
+ }
+ void STUDENT :: get_rn(int a)
+ {
+	rn = a;
+ }
+ void STUDENT :: put_rn()
+ {
+	cout<<"Roll No. = "<<rn<<"\n";
+ }
+ void TEST :: get_marks(float x , float y)
+ {
+	sub1 = x;
+	sub2 = y;
+ }
+ void TEST :: put_marks()
+ {
+	cout<<"Sub1 = "<<sub1<<"\n";
+	cout<<"Sub2 = "<<sub2<<"\n";
+ }
+ void SPORTS :: get_score(float s)
+ {
+	score = s;
+ }
+ void SPORTS :: put_score()
+ {
+	cout<<"Score = "<<score<<"\n";
+ }
+ void RESULT :: display()
+ {
+	total = sub1 + sub2 + score;
+	put_rn();
+	put_marks();
+	put_score();
+	cout<<"TOTAL MARKS = "<<total<<"\n";
+ }
+ void main()
+ {
+	clrscr();
+		RESULT V;
+		V.get_rn(1234);
+		V.get_marks(23.7,54.2);
+		V.get_score(6.5);
+		V.display();
+	getch();
+ }
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+																				/*
+ Write a program to print Binary Operator Overloading
+																												*/
+ #include<iostream.h>
+ #include<conio.h>
+ class COMPLEX
+ {
+	float x,y;
+	public:
+		COMPLEX()
+		{
+		}
+		COMPLEX(float real , float imag)
+		{
+			x = real;
+			y = imag;
+		}
+		COMPLEX operator +(COMPLEX);
+		void display(void);
+ };
+ COMPLEX COMPLEX :: operator + (COMPLEX C)
+ {
+	COMPLEX temp;
+	temp.x = x + C.x;
+	temp.y = y + C.y;
+	return (temp);
+ }
+ void COMPLEX :: display(void)
+ {
+	cout<<x<<"+ J"<<y<<"\n";
+ }
+ void main()
+ {
+	clrscr();
+		COMPLEX C1, C2, C3;
+		C1 = COMPLEX (5.5, 6.5);
+		C2 = COMPLEX (1.5, 2.7);
+		C3 = C1 + C2;
+		cout<<"C1 = ";
+			C1.display();
+		cout<<"C2 = ";
+			C2.display();
+		cout<<"C3 = ";
+			C3.display();
+	getch();
+ }

@@ -1,0 +1,34 @@
+																	/*
+ Program for Rethrow exception.
+													*/
+ #include<iostream.h>
+ #include<conio.h>
+ void divide(double x,double y)
+ {
+	cout<<"Inside Funtion";
+	try{
+		if(y == 0.0)
+			throw y;
+		else
+			cout<<"Division = "<<x/y<<"\n";
+	}
+	catch(double)
+	{
+		cout<<"Cought Double Inside"<<"\n";
+		throw;
+	}
+ }
+ void main()
+ {
+	clrscr();
+		cout<<"Inside main \n";
+		try{
+			divide(10.5,2.0);
+			divide(20.0,0.0);
+		}
+		catch(double)
+		{
+			cout<<"Cought double \n";
+		}
+	getch();
+ }

@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main();
+{
+char a[10];
+clrscr();
+printf("Team Name; ");
+scanf("%s",&a);
+printf("slot1 - team%s",a);
+getch();
+}

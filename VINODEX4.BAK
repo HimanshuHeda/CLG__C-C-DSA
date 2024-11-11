@@ -1,0 +1,60 @@
+
+ #include<stdio.h>
+ #include<conio.h>
+ void main()
+ {
+	clrscr();
+	char g[7];
+	int ch;
+	float a,b,c,add,sub,mul,div;
+
+ do
+	printf("\nEnter the value of a & b ::  ");
+		scanf("%f%f",&a,&b);
+	printf("\n Enter the operation you want to perform \n\t 1. addition \n\t 2. subtraction \n\t 3. multipiction \n\t 4. division \n");
+		scanf("%d",&ch);
+
+ switch(ch)
+ {
+
+ case 1:
+	add=a+b;
+		printf("\n Result of Addition = %f",add);
+	break;
+
+ case 2:
+	sub=a-b;
+		printf("\n Result of Subtraction = %f",sub);
+	break;
+
+ case 3:
+	mul=a*b;
+		printf("\n Result of multipication = %f",mul);
+	break;
+
+ case 4:
+	div=a/b;
+		printf("\n Result of division = %f",div);
+	break;
+
+ default:
+	printf("\n\nyour invalide choice ( wrong keyword) ");
+
+ }
+ while(g!='exit')
+
+ printf("\nTo exit the program, type exit");
+	scanf("%c",&g);
+
+	if(g=='exit')
+	{
+		break;
+	}
+
+	else
+	{
+		continue;
+	}
+
+ getch();
+ }

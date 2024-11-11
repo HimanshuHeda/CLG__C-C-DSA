@@ -1,0 +1,26 @@
+																				/*
+ Write a program to print FRIENDS FUCNTION.
+																												*/
+ #include<iostream.h>
+ #include<conio.h>
+ class SAMPLE
+ {
+	int a,b;
+	void setvalue()
+	{
+		a=25;
+		b=40;
+	}
+	friend float mean(SAMPLE S)
+	{
+		return(S.a,S.b)/2.0;
+	}
+ };
+ void main()
+ {
+	clrscr();
+		SAMPLE X;
+		X.setvalue();
+		cout<<"MEAN = "<<mean(X)<<"\n";
+	getch();
+ }

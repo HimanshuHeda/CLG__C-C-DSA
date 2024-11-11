@@ -1,0 +1,10 @@
+ // Compare 3 numbers.
+
+ #include<stdio.h>
+ #include<conio.h>
+ void main()
+ {
+	clrscr();
+
+	getch();
+ }
